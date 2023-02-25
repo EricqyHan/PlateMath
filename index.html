@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Eric's Plate Math App</title>
+</head>
+
+<body>
+   <h1>Plate Math Here</h1>
+
+   <h2>Select what kind of bar you are using</h2>
+
+
+   <select name="bar" id="bar" onchange="selectBar()">
+      <option value="0" selected>No Option Selected</option>
+      <option value="45">Men's 45# bar (20 kg)</option>
+      <option value="33">Women's 33# bar (15 kg)</option>
+   </select>
+
+
+   <p>Current weight of bar: <span id="barWeight"></span> pounds</p>
+   <p>Or</p>
+   <p>Current weight of bar: <span id="barWeightKilos"></span> in kilos</p>
+
+   <p>Test: <span id="numberof45s"></span></p>
+
+   <label for="">Pick how many 45# you have on each side</label>
+   <select name="select45pounds" id="select45pounds" onchange="selected45Pound()">
+      <option value="0" selected>0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+   </select>
+
+
+
+
+   <script src="script.js"></script>
+</body>
+
+</html>
