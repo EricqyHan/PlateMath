@@ -27,21 +27,19 @@
 
    <p>Test: <span id="numberof45s"></span></p>
 
-   <label for="">Pick how many 45# you have on each side</label>
-   <select name="select45pounds" id="select45pounds" onchange="selected45Pound()">
-      <option value="0" selected>0</option>
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5</option>
-      <option value="6">6</option>
-      <option value="7">7</option>
-      <option value="8">8</option>
-      <option value="9">9</option>
-      <option value="10">10</option>
-   </select>
+   <button id="calculateBar">Calculate Total On Bar</button>
 
+   <form>
+      <label for="plate45pounds"> Number of 45# plates: </label>
+      <input id="plate45pounds" type="number" min="0" placeholder="Number of 45# plates">
+      <p>Total pounds of 45# plates on bar: <span></span></p>
+      <br>
+      <label for="plate35pounds"> Number of 35# plates: </label>
+      <input id="plate35pounds" type="number" min="0" placeholder="Number of 35# plates">
+      <br>
+      <label for="plate25pounds"> Number of 25# plates: </label>
+      <input id="plate25pounds" type="number" min="0" placeholder="Number of 25# plates">
+   </form>
 
 
 
