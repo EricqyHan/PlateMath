@@ -27,6 +27,8 @@ document.querySelector("#calculateBar").addEventListener("click", calcBar);
 
 function calcBar() {
   let bar = Number(document.getElementById("bar").value);
+  let fiftyFive =
+    Number(document.getElementById("plate55pounds").value) * 55 * 2;
   let fortyFive =
     Number(document.getElementById("plate45pounds").value) * 45 * 2;
   //   document.getElementById("numberof45s").innerText = fortyFive;
@@ -35,6 +37,19 @@ function calcBar() {
   let twentyFive =
     Number(document.getElementById("plate25pounds").value) * 25 * 2;
   // document.getElementById("numberof45s").innerText = thirtyFive;
+  let fifteen = Number(document.getElementById("plate15pounds").value) * 15 * 2;
+  let ten = Number(document.getElementById("plate10pounds").value) * 10 * 2;
+  let five = Number(document.getElementById("plate5pounds").value) * 5 * 2;
+  let twohalf =
+    Number(document.getElementById("plate2halfpounds").value) * 2.5 * 2;
   document.getElementById("numberof45s").innerText =
-    bar + fortyFive + thirtyFive + twentyFive;
+    bar +
+    fiftyFive +
+    fortyFive +
+    thirtyFive +
+    twentyFive +
+    fifteen +
+    ten +
+    five +
+    twohalf;
 }
