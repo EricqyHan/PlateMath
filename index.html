@@ -15,12 +15,16 @@
 
    <h2>Select what kind of bar you are using?</h2>
 
+   <fieldset name="bar" onchange="selectBar()">
+      <legend>Select Bar</legend>
+      <select name="bar" id="bar" onchange="selectBar()">
+         <option value="0" selected>No Option Selected</option>
+         <option value="45">Men's 45# bar (20 kg)</option>
+         <option value="33">Women's 33# bar (15 kg)</option>
+      </select>
+   </fieldset>
 
-   <select name="bar" id="bar" onchange="selectBar()">
-      <option value="0" selected>No Option Selected</option>
-      <option value="45">Men's 45# bar (20 kg)</option>
-      <option value="33">Women's 33# bar (15 kg)</option>
-   </select>
+
 
 
    <p>Current weight of bar: <span id="barWeight"></span> pounds</p>

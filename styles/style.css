@@ -20,3 +20,11 @@ label {
   display: block;
   margin: 1rem 0;
 }
+
+h1 {
+  color: Red;
+}
+
+fieldset {
+  color: white;
+}

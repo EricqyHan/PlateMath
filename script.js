@@ -1,8 +1,8 @@
 function selectBar() {
   //   alert("you have changed");
-  let bar = document.getElementById("bar").value;
+  let bar = document.querySelector("#bar").value;
   document.getElementById("barWeight").innerText = bar;
-  document.getElementById("barWeightKilos").innerText = 0.454 * +bar;
+  document.getElementById("barWeightKilos").innerText = Math.ceil(0.454 * +bar);
 }
 
 // function selected45Pound() {
