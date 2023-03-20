@@ -5,6 +5,20 @@ body {
   height: 100vh;
 }
 
+h1,
+h2 {
+  text-align: center;
+}
+
+fieldset,
+form,
+#lifting {
+  margin: 0 auto;
+  max-width: 500px;
+  min-width: 300px;
+  width: 60vw;
+}
+
 legend {
   text-align: center;
 }
@@ -18,7 +32,12 @@ hr {
 
 label {
   display: block;
-  margin: 1rem 0;
+  margin: 0rem auto;
+}
+
+#bar {
+  display: block;
+  margin: 0 auto;
 }
 
 h1 {
@@ -26,5 +45,20 @@ h1 {
 }
 
 fieldset {
-  color: white;
+  color: red;
+}
+
+.pounds {
+  display: block;
+  margin: 0.5rem auto;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 10%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
 }

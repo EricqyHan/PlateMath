@@ -24,47 +24,59 @@
       </select>
    </fieldset>
 
+   <section id="lifting">
+      <p>Current weight of bar: <span id="barWeight">0</span> pounds or <span id="barWeightKilos">0</span> in kilos</p>
+      <p>Test: <span id="numberof45s"></span></p>
 
-
-
-   <p>Current weight of bar: <span id="barWeight"></span> pounds</p>
-   <p>Or</p>
-   <p>Current weight of bar: <span id="barWeightKilos"></span> in kilos</p>
-
-   <p>Test: <span id="numberof45s"></span></p>
-
-   <button id="calculateBar">Calculate Total On Bar</button>
+      <!-- <button id="calculateBar">Calculate Total On Bar</button> -->
+   </section>
 
    <form>
       <fieldset>
          <legend>Find out how much weight is on the bar</legend>
-         <label for="plate55pounds"> Number of 55# plates: </label>
-         <input id="plate55pounds" type="number" min="0" placeholder="Number of 55# plates">
-         <br>
-         <label for="plate45pounds"> Number of 45# plates: </label>
-         <input id="plate45pounds" type="number" min="0" placeholder="Number of 45# plates">
-         <br>
-         <label for="plate35pounds"> Number of 35# plates: </label>
-         <input id="plate35pounds" type="number" min="0" placeholder="Number of 35# plates">
-         <br>
-         <label for="plate25pounds"> Number of 25# plates: </label>
-         <input id="plate25pounds" type="number" min="0" placeholder="Number of 25# plates">
-         <br>
-         <label for="plate15pounds"> Number of 15# plates: </label>
-         <input id="plate15pounds" type="number" min="0" placeholder="Number of 15# plates">
-         <br>
-         <label for="plate10pounds"> Number of 10# plates: </label>
-         <input id="plate10pounds" type="number" min="0" placeholder="Number of 10# plates">
-         <br>
-         <label for="plate5pounds"> Number of 5# plates: </label>
-         <input id="plate5pounds" type="number" min="0" placeholder="Number of 5# plates">
-         <br>
-         <label for="plate2halfpounds"> Number of 2.5# plates: </label>
-         <input id="plate2halfpounds" type="number" min="0" placeholder="Number of 2.5# plates">
+         <section class="pounds">
+            <label for="plate55pounds"> Number of 55# plates: </label>
+            <input id="plate55pounds" type="number" min="0" placeholder="Number of 55# plates">
+         </section>
+
+         <section class="pounds">
+            <label for="plate45pounds"> Number of 45# plates: </label>
+            <input id="plate45pounds" type="number" min="0" placeholder="Number of 45# plates">
+         </section>
+
+         <section class="pounds">
+            <label for="plate35pounds"> Number of 35# plates: </label>
+            <input id="plate35pounds" type="number" min="0" placeholder="Number of 35# plates">
+         </section>
+
+         <section class="pounds">
+            <label for="plate25pounds"> Number of 25# plates: </label>
+            <input id="plate25pounds" type="number" min="0" placeholder="Number of 25# plates">
+         </section>
+
+         <section class="pounds">
+            <label for="plate15pounds"> Number of 15# plates: </label>
+            <input id="plate15pounds" type="number" min="0" placeholder="Number of 15# plates">
+         </section>
+
+         <section class="pounds"><label for="plate10pounds"> Number of 10# plates: </label>
+            <input id="plate10pounds" type="number" min="0" placeholder="Number of 10# plates">
+         </section>
+
+         <section class="pounds">
+            <label for="plate5pounds"> Number of 5# plates: </label>
+            <input id="plate5pounds" type="number" min="0" placeholder="Number of 5# plates">
+         </section>
+
+         <section class="pounds">
+            <label for="plate2halfpounds"> Number of 2.5# plates: </label>
+            <input id="plate2halfpounds" type="number" min="0" placeholder="Number of 2.5# plates">
+         </section>
       </fieldset>
-
    </form>
+   <input type="submit" value="Calculate Bar" id="calculateBar">
 
+   <!-- <button id="calculateBar">Calculate Total On Bar</button> -->
 
 
 
