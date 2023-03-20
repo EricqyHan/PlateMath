@@ -1,10 +1,17 @@
 function selectBar() {
   let bar = document.querySelector("#bar").value;
-  document.getElementById("barWeight").innerText = bar;
-  document.getElementById("barWeightKilos").innerText = Math.ceil(0.454 * +bar);
+  document.getElementById("numberofplates").innerText = bar;
+  document.getElementById("numberofplatesKilos").innerText = Math.ceil(
+    0.454 * +bar
+  );
 }
 
-document.querySelector("#calculateBar").addEventListener("click", calcBar);
+// document.querySelectorAll(".calculate").addEventListener("click", calcBar);
+const calculateBarbell = document.querySelectorAll(".calculate");
+
+Array.from(calculateBarbell).forEach((element) => {
+  element.addEventListener("click", calcBar);
+});
 
 function calcBar() {
   let bar = Number(document.getElementById("bar").value);
@@ -21,7 +28,7 @@ function calcBar() {
   let five = Number(document.getElementById("plate5pounds").value) * 5 * 2;
   let twohalf =
     Number(document.getElementById("plate2halfpounds").value) * 2.5 * 2;
-  document.getElementById("numberof45s").innerText =
+  document.getElementById("numberofplates").innerText =
     bar +
     fiftyFive +
     fortyFive +
@@ -31,4 +38,16 @@ function calcBar() {
     ten +
     five +
     twohalf;
+  document.getElementById("numberofplatesKilos").innerText = Math.ceil(
+    (bar +
+      fiftyFive +
+      fortyFive +
+      thirtyFive +
+      twentyFive +
+      fifteen +
+      ten +
+      five +
+      twohalf) /
+      2.205
+  );
 }
